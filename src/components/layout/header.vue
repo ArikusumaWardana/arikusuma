@@ -27,7 +27,7 @@ const navbarLink = ref([
   {title: 'Home', links: '/'},
   {title: 'About', links: '/about'},
   {title: 'Project', links: '/project'},
-  {title: 'Skill', links: '/skill'}
+  {title: 'Skills & Tools', links: '/skill'}
 ])
 
 </script>
