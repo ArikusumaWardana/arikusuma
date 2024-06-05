@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-let path = 'src/assets/project/'
+let path = 'assets/project/'
 
 
 export const projectList = ref([
