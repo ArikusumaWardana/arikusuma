@@ -1,8 +1,14 @@
+<script setup>
+
+import logo from '@/assets/logo-a.png'
+
+</script>
+
 <template>
   <footer class="bg-gray-800 dark:bg-gray-200 text-gray-200 dark:text-gray-700 py-8">
     <div class="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0 md:space-x-6">
       <div class="flex flex-col items-center md:items-start">
-        <img src="@/assets/logo-a.png" alt="Logo" class="h-10 w-10 mb-2">
+        <img :src="logo" alt="Logo" class="h-10 w-10 mb-2">
         <h2 class="text-xl font-semibold">Arikusuma Wardana</h2>
         <p class="text-gray-400 text-sm">Your go-to platform for amazing services.</p>
       </div>

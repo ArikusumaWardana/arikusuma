@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import logo from '@/assets/logo-a.png'
 
 const isScrolled = ref(false)
 const isDarkMode = ref(localStorage.getItem('theme') === 'dark')
@@ -23,6 +24,7 @@ onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
 })
 
+
 const navbarLink = ref([
   {title: 'Home', links: '/'},
   {title: 'About', links: '/about'},
@@ -36,7 +38,7 @@ const navbarLink = ref([
    <nav :class="['p-3 fixed w-full z-50 transition-all duration-300', isScrolled ? 'bg-gray-800 dark:bg-gray-200 border-b border-blue-600' : 'bg-transparent']">
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center">
-        <img src="@/assets/logo-a.png" alt="Logo" class="h-12 w-12">
+        <img :src="logo" alt="Logo" class="h-12 w-12">
         <span class="text-white text-xl dark:text-gray-800 font-semibold hidden md:block">Arikusuma Wardana</span>
       </div>
       <div class="hidden md:flex space-x-3">

@@ -1,6 +1,7 @@
 <script setup>
   import { useRoute } from 'vue-router'
   import { ref } from 'vue'
+  import profil from '@/assets/photo.jpg'
 
   const route = useRoute()
 
@@ -19,7 +20,7 @@
   <div class="home-body lg:min-h-screen flex flex-col md:justify-center lg:justify-center items-center bg-gray-900 dark:bg-gray-100 px-4 pb-4 pt-14 lg:pt-0 duration-150">
     <div class="max-w-5xl w-full bg-gray-800 dark:border dark:border-blue-500 dark:bg-gray-200 rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center">
       <div class="flex-shrink-0">
-        <img src="@/assets/photo.jpg" alt="Profile Picture" class="h-56 w-56 rounded-full border-4 border-blue-500">
+        <img :src="profil" alt="Profile Picture" class="h-56 w-56 rounded-full border-4 border-blue-500">
       </div>
       <div class="mt-6 md:mt-0 md:ml-6 text-center md:text-left">
         <h1 class="text-4xl font-bold text-white dark:text-gray-700">
