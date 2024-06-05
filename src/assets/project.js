@@ -1,11 +1,17 @@
 import { ref } from 'vue'
-let path = 'assets/project/'
+import movieque from '@/assets/project/movieque.png'
+import ScxLyrics from '@/assets/project/ScxLyrics.png'
+import NovelsUp from '@/assets/project/NovelsUp.png'
+import Clock from '@/assets/project/Clock.png'
+import BukuExplore from '@/assets/project/BukuExplore.png'
+import Kwitansi from '@/assets/project/Kwitansi.png'
+import noImage from '@/assets/project/no-image.png'
 
 
 export const projectList = ref([
         {
             title: 'Movieque Website',
-            image: path + 'movieque.png',
+            image: movieque,
             techStack: [
                 {techName: 'HTML', techClass: 'fab fa-html5 text-orange-500'},
                 {techName: 'CSS', techClass: 'fab fa-css3-alt text-blue-500'},
@@ -20,7 +26,7 @@ export const projectList = ref([
         },
         {
             title: 'ScxLyrics Website',
-            image: path + 'ScxLyrics.png',
+            image: ScxLyrics,
             techStack: [
                 {techName: 'HTML', techClass: 'fab fa-html5 text-orange-500'},
                 {techName: 'CSS', techClass: 'fab fa-css3-alt text-blue-500'},
@@ -34,7 +40,7 @@ export const projectList = ref([
         },
         {
             title: 'Novels Up Website',
-            image: path + 'NovelsUp.png',
+            image: NovelsUp,
             techStack: [
                 {techName: 'HTML', techClass: 'fab fa-html5 text-orange-500'},
                 {techName: 'CSS', techClass: 'fab fa-css3-alt text-blue-500'},
@@ -48,7 +54,7 @@ export const projectList = ref([
         },
         {
             title: 'Clock Website',
-            image: path + 'Clock.png',
+            image: Clock,
             techStack: [
                 {techName: 'HTML', techClass: 'fab fa-html5 text-orange-500'},
                 {techName: 'CSS', techClass: 'fab fa-css3-alt text-blue-500'},
@@ -61,7 +67,7 @@ export const projectList = ref([
         }, 
         {
             title: 'Buku Explore Website',
-            image: path + 'BukuExplore.png',
+            image: BukuExplore,
             techStack: [
                 {techName: 'HTML', techClass: 'fab fa-html5 text-orange-500'},
                 {techName: 'CSS', techClass: 'fab fa-css3-alt text-blue-500'},
@@ -75,7 +81,7 @@ export const projectList = ref([
         }, 
         {
             title: 'Kwitansi Website',
-            image: path + 'Kwitansi.png',
+            image: Kwitansi,
             techStack: [
                 {techName: 'HTML', techClass: 'fab fa-html5 text-orange-500'},
                 {techName: 'CSS', techClass: 'fab fa-css3-alt text-blue-500'},
@@ -88,7 +94,7 @@ export const projectList = ref([
         },
         {
             title: 'Item Repository App',
-            image: path + 'no-image.png',
+            image: noImage,
             techStack: [
                 {techName: 'Golang', techClass: 'fab fa-golang text-blue-400'}
             ],
