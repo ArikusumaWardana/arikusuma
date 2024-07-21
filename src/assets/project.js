@@ -4,6 +4,7 @@ import ScxLyrics from '@/assets/project/ScxLyrics.png'
 import NovelsUp from '@/assets/project/NovelsUp.png'
 import Clock from '@/assets/project/Clock.png'
 import RefillUniverse from '@/assets/project/refillUniverse.png'
+import PrimdevBlog from '@/assets/project/primdevBlog.png'
 import BukuExplore from '@/assets/project/BukuExplore.png'
 import Kwitansi from '@/assets/project/Kwitansi.png'
 import noImage from '@/assets/project/no-image.png'
@@ -76,6 +77,18 @@ export const projectList = ref([
             links: [
                 {icon: 'fab fa-github', routes: 'https://github.com/ArikusumaWardana/refill-universe'},
                 {icon: 'fa-solid fa-globe', routes: 'https://refill-universe.vercel.app/'}
+            ]
+        },
+        {
+            title: 'Primdev Blog',
+            image: PrimdevBlog,
+            techStack: [
+                {techName: 'Vue', techClass: 'fab fa-vuejs text-green-600'},
+                {texhName: 'Tailwind CSS', techClass: 'fab fa-css3-alt text-blue-500'},
+            ],
+            links: [
+                {icon: 'fab fa-github', routes: 'https://github.com/ArikusumaWardana/primdev-blog'},
+                {icon: 'fa-solid fa-globe', routes: 'https://primdev-blog.vercel.app/'}
             ]
         },
         {
