@@ -13,7 +13,7 @@
     <div class="project-container bg-gray-900 dark:bg-gray-100 text-white py-24  md:px-6 min-h-screen duration-150">
         <h1 class="text-4xl font-bold mb-8 text-center text-white dark:text-gray-700">My Projects</h1>
         <div class="grid-container">
-            <div v-for="(project, index) in projectList" :key="index" class="card bg-gray-800 dark:bg-gray-200 dark:border dark:border-blue-400 rounded-lg overflow-hidden shadow-lg max-w-xs">
+            <div v-for="(project, index) in projectList" :key="index" class="card bg-gray-800 dark:bg-gray-200 dark:border dark:border-blue-400 rounded-lg overflow-hidden shadow-lg max-w-xl">
                 <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover">
                 <div class="p-4 text-center">
                     <h2 class="text-xl font-bold mb-2 text-white dark:text-gray-700">{{ project.title }}</h2>
@@ -37,8 +37,8 @@
 <style scoped>
 
 .grid-container {
-@apply grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:px-28;
-margin: auto;
+@apply grid gap-8 lg:gap-14 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:px-28;
+  margin: auto;
 }
 
 .card:hover h2 {

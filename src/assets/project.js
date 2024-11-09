@@ -72,7 +72,7 @@ export const projectList = ref([
             image: RefillUniverse,
             techStack: [
                 {techName: 'Vue', techClass: 'fab fa-vuejs text-green-600'},
-                {texhName: 'Tailwind CSS', techClass: 'fab fa-css3-alt text-blue-500'},
+                {techName: 'Tailwind CSS', techClass: 'fab fa-css3-alt text-blue-500'},
             ],
             links: [
                 {icon: 'fab fa-github', routes: 'https://github.com/ArikusumaWardana/refill-universe'},
@@ -84,7 +84,7 @@ export const projectList = ref([
             image: PrimdevBlog,
             techStack: [
                 {techName: 'Vue', techClass: 'fab fa-vuejs text-green-600'},
-                {texhName: 'Tailwind CSS', techClass: 'fab fa-css3-alt text-blue-500'},
+                {techName: 'Tailwind CSS', techClass: 'fab fa-css3-alt text-blue-500'},
             ],
             links: [
                 {icon: 'fab fa-github', routes: 'https://github.com/ArikusumaWardana/primdev-blog'},

@@ -12,6 +12,8 @@ import mysql from '@/assets/skill/msql.png'
 
 // Import Assets Tools
 import vscode from '@/assets/tools/vscode.png'
+import webstorm from '@/assets/tools/webstorm.png'
+import phpstorm from '@/assets/tools/phpstorm.png'
 import dataGrip from '@/assets/tools/datagrip.png'
 import git from '@/assets/tools/git.png'
 import github from '@/assets/tools/github.png'
@@ -74,6 +76,16 @@ export const toolList = ref([
         toolName: 'VS Code',
         toolImage: vscode,
         toolLink: 'https://code.visualstudio.com/'
+    },
+    {
+        toolName: 'Webstorm',
+        toolImage: webstorm,
+        toolLink: 'https://www.jetbrains.com/webstorm/'
+    },
+    {
+        toolName: 'Phpstorm',
+        toolImage: phpstorm,
+        toolLink: 'https://www.jetbrains.com/phpstorm/'
     },
     {
         toolName: 'Data Grip',
