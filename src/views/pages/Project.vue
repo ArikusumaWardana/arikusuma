@@ -11,7 +11,7 @@
 
 <template>
     <div class="project-container bg-gray-900 dark:bg-gray-100 text-white py-24  md:px-6 min-h-screen duration-150">
-        <h1 class="text-4xl font-bold mb-8 text-center text-white dark:text-gray-700">My Projects</h1>
+        <h1 class="text-4xl font-bold mb-8 text-center text-white dark:text-gray-700 uppercase tracking-widest">My Projects</h1>
         <div class="grid-container">
             <div v-for="(project, index) in projectList" :key="index" class="card bg-gray-800 dark:bg-gray-200 dark:border dark:border-blue-400 rounded-lg overflow-hidden shadow-lg max-w-xl">
                 <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover">
