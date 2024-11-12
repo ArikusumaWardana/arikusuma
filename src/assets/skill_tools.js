@@ -4,6 +4,7 @@ import { ref } from 'vue'
 import html from '@/assets/skill/html.png'
 import css from '@/assets/skill/css.png'
 import js from '@/assets/skill/js.png'
+import vue from '@/assets/skill/vue.png'
 import php from '@/assets/skill/php.png'
 import laravel from '@/assets/skill/laravel.png'
 import bootstrap from '@/assets/skill/bootstrap.png'
@@ -38,6 +39,12 @@ export const skillList = ref([
         icon: js,
         level: 'beginner',
         link: 'https://www.javascript.com/'
+    },
+    {
+        name: 'Vue',
+        icon: vue,
+        level: 'beginner',
+        link: 'https://vuejs.org/'
     },
     {
         name: 'PHP',
