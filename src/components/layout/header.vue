@@ -4,6 +4,7 @@ import logo from '@/assets/logo-a.png'
 
 const isScrolled = ref(false)
 const isDarkMode = ref(localStorage.getItem('theme') === 'dark')
+const isMenuOpen = ref(false)
 
 const toggleDarkMode = () => {
   isDarkMode.value = !isDarkMode.value
@@ -24,18 +25,26 @@ onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
 })
 
-
 const navbarLink = ref([
-  {title: 'Home', links: '/'},
-  {title: 'About', links: '/about'},
-  {title: 'Project', links: '/project'},
-  {title: 'Skills & Tools', links: '/skill'}
+  { title: 'Home', links: '/' },
+  { title: 'About', links: '/about' },
+  { title: 'Project', links: '/project' },
+  { title: 'Skills & Tools', links: '/skill' }
 ])
 
+// Toggle menu for mobile view
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
+
+const closeMenu = () => {
+  isMenuOpen.value = false
+}
 </script>
 
+
 <template>
-   <nav :class="['p-3 fixed w-full z-50 transition-all duration-300', isScrolled ? 'bg-gray-800 dark:bg-gray-200 border-b border-blue-600' : 'bg-transparent']">
+  <nav :class="['p-3 fixed w-full z-50 transition-all duration-300', isScrolled || isMenuOpen ? 'bg-gray-800 dark:bg-gray-200 border-b border-blue-600' : 'bg-transparent']">
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center">
         <img :src="logo" alt="Logo" class="h-12 w-12">
@@ -56,13 +65,14 @@ const navbarLink = ref([
       </div>
     </div>
     <div v-show="isMenuOpen" class="md:hidden">
-      <router-link v-for="(data, index) in navbarLink" :key="index" :to="data.links" active-class="active" exact-active-class="active" class="block nav-menu text-gray-300 dark:text-gray-800 hover:bg-blue-600 hover:text-white hover:duration-200 focus:bg-blue-600 px-3 py-2 rounded-md text-base font-medium text-center">{{ data.title }}</router-link>
+      <router-link v-for="(data, index) in navbarLink" :key="index" :to="data.links" active-class="active" exact-active-class="active" class="block nav-menu text-gray-300 dark:text-gray-800 hover:bg-blue-600 hover:text-white hover:duration-200 focus:bg-blue-600 px-3 py-2 rounded-md text-base font-medium text-center" @click="closeMenu">{{ data.title }}</router-link>
       <button @click="toggleDarkMode" class="text-gray-300 hover:text-white focus:outline-none w-full text-center mt-4">
         <i :class="[isDarkMode ? 'fa-solid fa-moon' : 'fa-solid fa-sun']"></i>
       </button>
     </div>
   </nav>
 </template>
+
 
 <script>
   export default {

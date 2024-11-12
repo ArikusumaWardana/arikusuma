@@ -18,7 +18,7 @@
 
 
 <style scoped>
-  
+
 .slide-fade-enter-active, .slide-fade-leave-active {
   @apply transition-transform transition-opacity duration-700;
 }

@@ -12,7 +12,7 @@ import mysql from '@/assets/skill/msql.png'
 
 // Import Assets Tools
 import vscode from '@/assets/tools/vscode.png'
-import webstorm from '@/assets/tools/webstorm.png'
+import webstorm from '@/assets/tools/webstorms.png'
 import phpstorm from '@/assets/tools/phpstorm.png'
 import dataGrip from '@/assets/tools/datagrip.png'
 import git from '@/assets/tools/git.png'

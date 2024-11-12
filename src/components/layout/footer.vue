@@ -1,18 +1,18 @@
 <script setup>
-
 import logo from '@/assets/logo-a.png'
-
 </script>
 
 <template>
   <footer class="bg-gray-800 dark:bg-gray-200 text-gray-200 dark:text-gray-700 py-8">
     <div class="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0 md:space-x-6">
+      <!-- Logo and Description Section -->
       <div class="flex flex-col items-center md:items-start">
         <img :src="logo" alt="Logo" class="h-10 w-10 mb-2">
         <h2 class="text-xl font-semibold">Arikusuma Wardana</h2>
         <p class="text-gray-400 text-sm">Your go-to platform for amazing services.</p>
       </div>
 
+      <!-- Follow Us Section -->
       <div class="flex flex-col items-center md:items-start">
         <h3 class="text-lg font-semibold">Follow Us</h3>
         <div class="mt-2 flex space-x-4">
@@ -21,8 +21,24 @@ import logo from '@/assets/logo-a.png'
         </div>
       </div>
     </div>
+
+    <!-- Copyright Section -->
     <div class="mt-8 text-center text-gray-400 text-sm">
       &copy; 2024 Arikusuma Wardana. All rights reserved.
     </div>
   </footer>
 </template>
+
+<style scoped>
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+</style>
