@@ -97,7 +97,7 @@ export const toolList = ref([
     {
         toolName: 'Data Grip',
         toolImage: dataGrip,
-        toolLink: 'https://www.jetbrains.com/datagrip/?source=google&medium=cpc&campaign=APAC_en_ASIA_DataGrip_Branded&term=datagrip&content=555122603976&gad_source=1&gclid=Cj0KCQjwpNuyBhCuARIsANJqL9PJxAlpsbPPB50ckDKfgYV6nMFKYb9UzPjhbDfGBE4fzygAwVNNJB8aAhWhEALw_wcB'
+        toolLink: 'https://www.jetbrains.com/datagrip/'
     },
     {
         toolName: 'GIT',
