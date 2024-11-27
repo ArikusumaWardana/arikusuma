@@ -30,9 +30,9 @@
           Halo... Kenalin aku <span class="font-semibold">Kadek Agus Arikusuma Wardana</span>, bisa dipanggil <span class="font-semibold">Arik</span>. Aku adalah mahasiswa <span class="font-semibold">Primakara University</span>. Aku mengambil jurusan Informatika. Salam Kenal yakk <span class="font-extrabold">ᕙ(`▿´)ᕗ</span>
         </p>
         <div class="mt-4 flex justify-center md:justify-start space-x-4 lg:text-xl">
-          <router-link v-for="(data, index) in iconLink" :key="index" :href="data.link" class="text-gray-400 dark:text-gray-700 dark:hover:text-gray-600 hover:text-white" target="_blank">
+          <a v-for="(data, index) in iconLink" :key="index" :href="data.link" class="text-gray-400 dark:text-gray-700 dark:hover:text-gray-600 hover:text-white" target="_blank">
             <i :class="data.icon"></i>
-          </router-link>
+          </a>
         </div>
       </div>
     </div>
