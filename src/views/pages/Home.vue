@@ -8,9 +8,9 @@
   document.title = 'Arikusuma | ' + route.meta.title
 
   const iconLink = ref([
-    {icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/arikusuma-wardana/'},
+    {icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/arikusuma-wardana'},
     {icon: 'fa-brands fa-github', link: 'https://github.com/ArikusumaWardana'},
-    {icon: 'fa-brands fa-instagram', link: 'https://www.instagram.com/arikusuma.05/'},
+    {icon: 'fa-brands fa-instagram', link: 'https://www.instagram.com/arikusuma.05'},
     {icon: 'fa-brands fa-discord', link: 'https://discordid.netlify.app/?id=887315167958929469'}
   ])
 
@@ -30,7 +30,7 @@
           Halo... Kenalin aku <span class="font-semibold">Kadek Agus Arikusuma Wardana</span>, bisa dipanggil <span class="font-semibold">Arik</span>. Aku adalah mahasiswa <span class="font-semibold">Primakara University</span>. Aku mengambil jurusan Informatika. Salam Kenal yakk <span class="font-extrabold">ᕙ(`▿´)ᕗ</span>
         </p>
         <div class="mt-4 flex justify-center md:justify-start space-x-4 lg:text-xl">
-          <router-link v-for="(data, index) in iconLink" :key="index" :to="data.link" class="text-gray-400 dark:text-gray-700 dark:hover:text-gray-600 hover:text-white" target="_blank">
+          <router-link v-for="(data, index) in iconLink" :key="index" :href="data.link" class="text-gray-400 dark:text-gray-700 dark:hover:text-gray-600 hover:text-white" target="_blank">
             <i :class="data.icon"></i>
           </router-link>
         </div>
