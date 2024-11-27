@@ -11,7 +11,7 @@
 
 
 
-<template class="duration-150">
+<template>
     <div class="duration-150">
       <div class="project-container bg-gray-900 dark:bg-gray-100 text-white py-24 md:px-6 min-h-screen">
         <h1 class="text-4xl font-bold mb-8 text-center text-white dark:text-gray-700 uppercase tracking-widest">Skills</h1>

@@ -8,7 +8,7 @@
   document.title = 'Arikusuma | ' + route.meta.title
 
   const iconLink = ref([
-    {icon: 'fa-brands fa-facebook', link: 'https://www.facebook.com/profile.php?id=100087734726875'},
+    {icon: 'fa-brands fa-linkedin', link: 'https://www.linkedin.com/in/arikusuma-wardana/'},
     {icon: 'fa-brands fa-github', link: 'https://github.com/ArikusumaWardana'},
     {icon: 'fa-brands fa-instagram', link: 'https://www.instagram.com/arikusuma.05/'},
     {icon: 'fa-brands fa-discord', link: 'https://discordid.netlify.app/?id=887315167958929469'}
